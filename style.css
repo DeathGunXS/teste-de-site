@@ -1,0 +1,154 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    height: 300px;
+}
+
+h1 {
+    position: relative;
+    top: 30%;
+    left: 35%;
+    font-size: 75px;
+}
+
+h1 span {
+    color: #ff0;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+
+}
+
+.tag a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-movel {
+    display: none;
+}
+
+main {
+    min-height: 750px;
+}
+
+footer {
+    background-color: #000;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 40%;
+    font-size: 25px;
+}
+
+footer a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        position: relative;
+        left: 25%;
+        top: 35%;
+        font-size: 50px;
+    }
+
+    .tag {
+        display: none;
+        position: absolute;
+        left: -5%;
+        bottom: -65%;
+        width: 100%;
+    }
+
+    .menu-movel {
+        display: block;
+        width: 80%;
+        position: absolute;
+        top: 2.5%;
+        left: 15%;
+        text-align: right;
+        font-size: 25px;
+        margin-top: 8px;
+        color: var(--text-color2);
+        cursor: pointer;
+    }
+
+    .tag {
+        position: relative;
+        left: -6%;
+        bottom: -65%;
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 372px) {
+
+    header {
+        width: 582px;
+    }
+
+    h1 {
+        position: relative;
+        left: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-movel {
+        position: absolute;
+        left: 70%;
+    }
+
+    footer{
+        width: 582px;
+        height: 347px;
+    }
+
+    footer p {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+header .tag.ativado {
+    background: #000;
+    position: relative;
+    display: grid;
+    color: #fff;
+    margin-top: 40%;
+    margin-left: -2.5%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+header .tag.ativado a {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 25px;
+}

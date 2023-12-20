@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    position: relative;
+    left: 7.5%;
+    margin: 2%;
+}
+
+.item p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1366px) {
+    .item img{
+        width: 320px;
+    }
+
+    .item p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item img {
+        width: 80%;
+    }
+
+    .item p {
+        position: relative;
+        right: 10%;
+    }
+}

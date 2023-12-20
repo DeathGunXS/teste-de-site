@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 750px;
+    height: 425px;
+}
+
+main p {
+    width: 500px;
+    font-size: 30px;
+}
+
+img, main p {
+    position: relative;
+    left: 12.5%;
+    margin: 2%;
+}
+
+@media screen and (max-width: 1366px) {
+
+    img, main p {
+        position: relative;
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 92.5%;
+    }
+
+    main p {
+        position: relative;
+        top: 20%;
+        left: 20%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 372px) {
+
+    img {
+        width: 550px;
+    }
+
+    main p {
+        position: relative;
+        left: 10%;
+    }
+}

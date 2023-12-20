@@ -1,0 +1,98 @@
+.section1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.section1 img {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 15%;
+}
+
+.text {
+    position: relative;
+    left: 25%;
+}
+
+.text h2 {
+    margin-bottom: 2%;
+}
+
+.text p {
+    width: 500px;
+}
+
+.section2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.carousel-container {
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    position: relative;
+    left: 30%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1366px) {
+
+    .section1 {
+        position: relative;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 2.5%;
+    }
+
+    .carousel-container {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 372px) {
+
+    .section1 {
+        position: relative;
+        right: 20%;
+    }
+
+    .section1 img {
+        width: 500px;
+        position: relative;
+        left: 22.5%;
+    }
+
+    .carousel-container {
+        position: relative;
+        left: 2.5%;
+        width: 135%;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 500px;
+    }
+}
