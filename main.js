@@ -1,3 +1,5 @@
+window.alert(`Afaste o zoom se estiver no celular.`)
+
 const ativaMenu = document.querySelector('.fa-bars')
 const navMenu = document.querySelector('header .searching .tag')
 
