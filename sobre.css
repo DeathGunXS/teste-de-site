@@ -83,12 +83,14 @@
         width: 500px;
         position: relative;
         left: 22.5%;
+        margin-bottom: 2%;
     }
 
     .carousel-container {
         position: relative;
         left: 2.5%;
         width: 135%;
+        margin-top: 2%;
     }
 
     .carousel img {
